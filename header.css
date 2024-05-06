@@ -7,6 +7,10 @@ li, a ,button {
     color: black;;
 }
 
+header {
+    height: 10vh;
+}
+
 .inner-header {
     width: 70%;
     height: 100%;

@@ -5,4 +5,12 @@
     /* COLOR SCHEME */
     --off-color: #e6e6e6;
     --accent: #005dba;
+    --darker-accent: #004e9d;
+    --transparent-text: rgba(0,0,0,0.5);
+    --transparent-back: rgba(255, 255, 255, 0.5);
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    cursor: pointer;
 }
