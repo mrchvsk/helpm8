@@ -1,0 +1,77 @@
+* {
+    text-decoration: none;
+}
+
+
+.card {
+    width: 300px;
+    background-color: var(--off-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 10px;
+    background-color: lightgray;
+    margin-bottom: 0;
+}
+.progress {
+    width: 39%; 
+    height: 100%;
+    background-color: grey; 
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+    padding-bottom: 20px;
+}
+
+.position {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 10px 5px 0px 5px;
+}
+
+.description {
+    margin: 0 5px 10px 5px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.read-more-btn, .participate-btn {
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.read-more-btn, .read-more-btn>a:visited {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.participate-btn, .participate-btn>a:visited {
+    background-color: black;
+    color: var(--off-color);
+    text-decoration: none;
+}
+
+.read-more-btn>a, .participate-btn>a {
+    margin: 3px 5px 3px 5px;
+}
+
+
+
