@@ -8,6 +8,8 @@
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/register.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +44,22 @@
     </header>
 
     <main>
+
+        <!--BACKGROUND-->
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!--FORM-->
         <div class="container">
             <div class="form-container">
                 <h1>Welcome back</h1>
@@ -49,11 +67,10 @@
 
                 <form action="" method="post">
 
-                    <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Last name">
+                    <input id="email-input" type="text" placeholder="Email">
+                    <input id="pass-input" type="password" placeholder="Password">
 
-                    <input type="text" placeholder="Email">
-
+                    <input type="Submit" id="submit-button">
                 </form>
             </div>
         </div>
