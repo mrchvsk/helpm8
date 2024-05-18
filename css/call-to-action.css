@@ -28,7 +28,8 @@
 }
 
 .left > h5 {
-    font-weight: lighter;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 #action-input {
@@ -41,7 +42,7 @@
 
 #action-input::placeholder {
     color: white;
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 #action-input:focus {
