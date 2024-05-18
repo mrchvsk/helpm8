@@ -1,77 +1,89 @@
-* {
-    text-decoration: none;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+.offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-.card {
-    width: 300px;
-    background-color: var(--off-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.thumbnail {
     width: 300px;
     height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding-left: 10px;
+
+    background-color: var(--off-color);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.progress-bar {
-    width: 300px;
-    height: 10px;
-    background-color: lightgray;
-    margin-bottom: 0;
-}
-.progress {
-    width: 39%; 
-    height: 100%;
-    background-color: grey; 
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 10px 0 10px;
-    padding-bottom: 20px;
-}
-
-.position {
-    font-weight: 600;
-    font-size: 26px;
-    margin: 10px 5px 0px 5px;
-}
-
-.description {
-    margin: 0 5px 10px 5px;
-    text-align: justify;
-    font-size: 15px;
-}
-
-.read-more-btn, .participate-btn {
-    border-radius: 10px;
-    border: 2px solid black;
+.offer > h5 {
     font-weight: 500;
-    font-size: 18px;
 }
 
-.read-more-btn, .read-more-btn>a:visited {
+.offer > small {
+    font-weight: 300;
+}
+
+.offer-buttons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.offer-button{
+    font-weight: 500;
+    font-size: 16px;
+    height: 40px;
+    border: none;
     background-color: transparent;
-    text-decoration: none;
-    color: black;
+    margin-right: 10px;
 }
 
-.participate-btn, .participate-btn>a:visited {
-    background-color: black;
-    color: var(--off-color);
-    text-decoration: none;
+#offer-participate-button {
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: white;
+    width: 130px;
 }
 
-.read-more-btn>a, .participate-btn>a {
-    margin: 3px 5px 3px 5px;
+#offer-participate-button:hover {
+    background-color: var(--darker-accent);
+}
+
+#offer-participate-button:active {
+    background-color: var(--lighter-accent);
 }
 
 
+/* PROGRESS BAR */
 
+.offer-progress {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: var(--off-color);
+    overflow: hidden; 
+}
+
+.offer-progress::-webkit-progress-bar {
+    background-color: var(--off-color);
+}
+
+.offer-progress::-webkit-progress-value {
+    background-color: var(--accent);
+}
+
+.offer-progress::-moz-progress-bar {
+    background-color: var(--accent);
+}

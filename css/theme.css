@@ -10,6 +10,7 @@
     /* COLOR SCHEME */
     --off-color: #e6e6e6;
     --accent: #005dba;
+    --lighter-accent: #036ad1;
     --darker-accent: #004e9d;
     --transparent-text: rgba(0,0,0,0.5);
     --transparent-back: rgba(255, 255, 255, 0.5);
@@ -46,4 +47,8 @@ h6{
 
 p{
     font-size: 1rem;
+}
+
+small {
+    font-size: 0.833rem;
 }
