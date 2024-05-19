@@ -45,14 +45,21 @@ header {
 
 #regis-button, #login-button {
     background-color: transparent;
-    font-size: 120%;
+    font-size: 16px;
     border: none;
     border-radius: 10px;
-    padding: 5px 20px 5px 20px;
+    font-weight: 500;
+    margin-left: 10px;
 }
 
 #regis-button {
     background-color: var(--accent);
+    width: 130px;
+    height: 40px;
+}
+
+#regis-button:hover {
+    background-color: var(--darker-accent);
 }
 
 #regis-button > a {

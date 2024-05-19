@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     position: relative;
     z-index: 1;
@@ -12,11 +17,13 @@ header {
     z-index: 1;
 }
 
+/* FORM */
+
 .form-container {
     background-color: var(--transparent-back);
     box-shadow: var(--shadow);
 
-    border-radius: 40px;
+    border-radius: 10px;
     width: 500px;
     margin: auto;
 
@@ -27,54 +34,59 @@ header {
 
 #register-form{
     width: 100%;
+}
+
+.form-container > h2 {
+    color: var(--transparent-text);
+}
+
+.form-container > p {
+    font-weight: 300;
+    color: grey;
     margin-bottom: 20px;
 }
 
-form * {
+
+input:not([type="submit"]) {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-color: rgba(92, 92, 92, 0.2);
+    padding-left: 10px;
+    width: 200px;
+
     margin-bottom: 10px;
+}
+
+#email-input {
+    width: 415px;
+}
+
+input:focus {
     border: none;
 }
 
+/* SUBMIT BUTOON */
+
 #submit-button {
-    font-size: 120%;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--accent);
+    font-size: 16px;
+    font-weight: 500;
     color: white;
-    padding: 5px 20px 5px 20px;
-    margin-top: 10px;
     cursor: pointer;
-    transition: all 0.5s ease;
+    background-color: var(--accent);
+
+    border: none;
+    border-radius: 10px;
+
+    width: 130px;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
 #submit-button:hover {
     background-color: var(--darker-accent);
-    transform: translateY(-2px);
 }
 
-.form-container > h1 {
-    font-size: 280%;
-    color: var(--transparent-text);
-    margin: 40px 0 5px 0;
-}
-
-.form-container > p {
-    margin: 0 0 20px 0;
-}
-
-
-input[type="text"], input[type="password"]{
-    background-color: transparent;
-    border-radius: 5px;
-}
-
-#first-name-input,
-#last-name-input,
-#pass-input,
-#re-pass-input {
-    width: 190px;
-}
-
-#email-input {
-    width: 380px;
+#submit-button:active {
+    background-color: var(--lighter-accent);
 }

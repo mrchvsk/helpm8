@@ -57,7 +57,7 @@
     height: 50px;
     font-size: 2rem;
     background-color: rgba(92, 92, 92, 0.6);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
