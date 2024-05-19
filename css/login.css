@@ -1,0 +1,14 @@
+.form-container {
+    width: 400px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-input, #pass-input {
+    width: 200px;
+}

@@ -37,6 +37,7 @@ header {
 }
 
 .form-container > h2 {
+    margin-top: 20px;
     color: var(--transparent-text);
 }
 
